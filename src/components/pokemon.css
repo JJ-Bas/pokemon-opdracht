@@ -1,0 +1,35 @@
+.poke-image {
+    width: 180px;
+    margin: 14px;
+    border-style: solid;
+    border-color: RGB(255, 203, 5);
+    border-width: 4px;
+
+    background-color:hsl(0, 0%, 100%, 30%);
+
+}
+
+.pokemon-card {
+    width: 220px;
+    height: 330px;
+    border-style: solid;
+    border-color:  RGB(255, 203, 5);
+    border-radius: 10px;
+    border-width: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    background-color: hsl(216, 55%, 80%, 30%);
+}
+
+.pokemon-card-text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
