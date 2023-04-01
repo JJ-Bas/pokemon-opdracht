@@ -18,9 +18,20 @@ function Pokemon({pokemoninfo}) {
         void fetchPokedex()
     },[])
     return (
-        <div>
+        <div className='pokemon-card'>
             {pokemon.id > 0 &&
+                <>
                 <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} className="poke-image"/>
+                    <div className='pokemon-card-text'>
+                    <h2>{pokemon.name}</h2>
+                        <ul>
+                    {pokemon.types.map((multipletypes) => {
+                    return (
+                        <li>{multipletypes.type.name}</li>
+                        )})
+                    }</ul>
+                    </div>
+                </>
             }
         </div>
     );
